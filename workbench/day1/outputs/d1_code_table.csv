@@ -1,0 +1,70 @@
+﻿원래 표기,표준 코드,판단 근거(어느 단어로),확신(높음/낮음)
+10% T/T advance + 90% O/A 90 days,검토 필요,"'10% T/T advance' + '90% O/A' — 선수 10%·외상 90% 혼합, 7개 코드 중 해당 없음",낮음
+100% T/T before shipment,TT_ADV,'before shipment' — 선적 전 100% 송금,높음
+30 DAYS OPEN ACCOUNT,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+"30% T/T advance, 70% within 30 days after B/L",TT_SPLIT_30_70,'30% T/T advance' + '70% ... after B/L' — 선수 30%·잔금 70%,높음
+60 days O/A ,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+Confirmed L/C at sight,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+D/A 60,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+D/A 60 days,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+D/A 60 days ,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+D/A 60 DAYS AFTER B/L,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+D/A 90,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+  D/A 90,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+d/a 90,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+D/A 90 days,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+D/P,DP,'D/P' — 지급인도조건,높음
+D/P at sight,DP,'D/P' — 지급인도조건,높음
+d/p at sight,DP,'D/P' — 지급인도조건,높음
+DA60,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+DA90,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+Documents against acceptance 60 days,DA,'D/A' / 'Documents against acceptance' — 인수인도조건,높음
+DP sight,DP,'D/P' — 지급인도조건,높음
+irrevocable l/c at sight,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+Irrevocable L/C at sight,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+L/C 60 days,LC_USANCE,'L/C' + 'N days' — 일람 후 N일 지급이라 기한부로 봄,높음
+L/C 90 days,LC_USANCE,'L/C' + 'N days' — 일람 후 N일 지급이라 기한부로 봄,높음
+L/C at sight ,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+LC at sight ,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+LC at sight,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+LC AT SIGHT,LC_SIGHT,'L/C at sight' — 일람불 신용장,높음
+Net 30 days after receipt of invoice,OA,"'Net N' — 송장 후 N일 내 지급, 은행 서류 없는 외상",높음
+  Net 30 days after receipt of invoice,OA,"'Net N' — 송장 후 N일 내 지급, 은행 서류 없는 외상",높음
+Net 60,OA,"'Net N' — 송장 후 N일 내 지급, 은행 서류 없는 외상",높음
+Net 90 ,OA,"'Net N' — 송장 후 N일 내 지급, 은행 서류 없는 외상",높음
+Net 90,OA,"'Net N' — 송장 후 N일 내 지급, 은행 서류 없는 외상",높음
+O/A 30,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+O/A 60,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+  O/A 60,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+O/A 90,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+o/a 90,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+O/A 90 ,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+O/A30,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+O/A60,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+OA 30 days,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+OA 60 days,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+OA 60 DAYS,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+OA 90 days,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+  OA90,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+OA90,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+Open account 60 days,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+open acct 90d,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+OPEN ACCT 90D,OA,'O/A' / 'Open account' — 사후송금(외상),높음
+T/T 30 days after B/L,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+T/T 30/70,TT_SPLIT_30_70,"'T/T 30/70' — 30:70 분할 송금(어느 쪽이 선수인지는 표기 없음, 관행상 30% 선수)",낮음
+T/T 30:70,TT_SPLIT_30_70,"'T/T 30/70' — 30:70 분할 송금(어느 쪽이 선수인지는 표기 없음, 관행상 30% 선수)",낮음
+T/T 60 DAYS AFTER B/L,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+T/T 60 days after B/L,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+t/t 60 days after b/l,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+T/T 60days,OA,'T/T' + 'N days' — 후지급으로 보이나 기산점(B/L·송장) 표기 없음,낮음
+T/T 60DAYS,OA,'T/T' + 'N days' — 후지급으로 보이나 기산점(B/L·송장) 표기 없음,낮음
+T/T 90 DAYS AFTER B/L,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+  T/T 90 days after B/L,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+t/t 90 days after b/l,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+T/T 90 days after B/L,OA,'T/T' + 'N days after B/L' — 선적 후 송금(외상). 7개 코드에 '후지급 T/T'가 없어 OA로 봄,낮음
+T/T in advance,TT_ADV,'in advance' — 선적 전 송금,높음
+TT,검토 필요,'TT'만 있음 — 선적 전(선수)인지 후(외상)인지 알 수 없음,낮음
+tt,검토 필요,'TT'만 있음 — 선적 전(선수)인지 후(외상)인지 알 수 없음,낮음
+usance l/c 90 days,LC_USANCE,'Usance L/C' — 기한부 신용장,높음
+Usance L/C 90 days,LC_USANCE,'Usance L/C' — 기한부 신용장,높음
+신용장 일람불,LC_SIGHT,'신용장 일람불' — 일람불 신용장(한글 표기),높음
