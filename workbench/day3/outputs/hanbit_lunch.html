@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>한빛식당 밥 예보</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f5f6f8;--card:#fff;--ink:#1f2328;--muted:#5b6370;--line:#e3e6ea;--accent:#1d5fd1;--warn:#c2410c;--gray:#6b7280;--bar:#c9ced6}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Noto Sans KR',sans-serif;font-size:16px;line-height:1.6;word-break:keep-all;overflow-wrap:break-word}
+main{max-width:1080px;margin:0 auto;padding:24px 16px 48px}
+.hero{padding:8px 0 20px;border-bottom:1px solid var(--line);margin-bottom:24px}
+h1{font-size:30px;margin:0 0 6px}
+.lead{margin:0;color:var(--muted);font-size:15px}
+h2{font-size:22px;margin:0 0 6px}
+.note{color:var(--muted);font-size:14px;margin:0 0 16px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:18px;min-width:0}
+.card-top{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.kicker{font-size:14px;color:var(--muted);font-weight:700}
+.badge{font-size:14px;font-weight:700;color:#fff;padding:2px 10px;border-radius:999px}
+.badge.ok{background:var(--accent)}.badge.half{background:var(--gray)}.badge.bad{background:var(--warn)}
+h3{font-size:18px;margin:8px 0 4px}
+.quote{font-size:14px;color:var(--muted);margin:0 0 12px}
+.nums{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0}
+.nums div{background:var(--bg);border-radius:8px;padding:8px 10px}
+.nums dt{font-size:14px;color:var(--muted)}
+.nums small{font-size:14px}
+.nums dd{margin:0;font-size:24px;font-weight:700}
+.nums dd span{font-size:14px;font-weight:400;margin-left:2px}
+.diff{font-size:14px;margin:10px 0 0}
+.extra{font-size:14px;color:var(--muted);margin:2px 0 0}
+.chart{position:relative;margin-top:10px}
+</style>
+</head>
+<body>
+<main>
+<header class="hero">
+  <h1>한빛식당 밥 예보</h1>
+  <p class="lead">(가상) 한빛정밀(주) 본사 구내식당 · 기록 기간 2025-10-01 – 2026-10-15 · 만든 사람 총무팀 최 대리(가상)</p>
+</header>
+<section id="beliefs">
+  <h2>영양사님 감 검증</h2>
+  <p class="note">출근 100명당 식수(식수 ÷ 출근예정 × 100)로 견줍니다 · 행사 없고 월급날 아닌 날만(205일) · 100명당 2명 이상 차이 나면 '차이 있음'(사람이 정한 선)</p>
+  <div class="grid">
+  <article class="card">
+    <div class="card-top"><span class="kicker">믿음 1</span><span class="badge ok">맞음</span></div>
+    <h3>비 오는 날엔 다들 구내식당으로 와요.</h3>
+    <p class="quote">우산 쓰고 나가기 귀찮거든요.</p>
+    <dl class="nums">
+      <div><dt>비 오는 날 <small>(50일)</small></dt><dd>73.4<span>명</span></dd></div>
+      <div><dt>맑은 날 <small>(94일)</small></dt><dd>65.3<span>명</span></dd></div>
+    </dl>
+    <p class="diff">차이 +8.1명 (출근 100명당)</p>
+    
+    <div class="chart" style="height:110px"><canvas id="belief-0" aria-label="믿음 1 막대 그래프"></canvas></div>
+  </article>
+  <article class="card">
+    <div class="card-top"><span class="kicker">믿음 2</span><span class="badge ok">맞음</span></div>
+    <h3>금요일 점심은 썰렁해요.</h3>
+    <p class="quote">다들 밖에서 맛있는 거 먹고 싶어 하죠.</p>
+    <dl class="nums">
+      <div><dt>금요일 <small>(38일)</small></dt><dd>60.0<span>명</span></dd></div>
+      <div><dt>월–목 <small>(167일)</small></dt><dd>69.6<span>명</span></dd></div>
+    </dl>
+    <p class="diff">차이 -9.6명 (출근 100명당)</p>
+    
+    <div class="chart" style="height:110px"><canvas id="belief-1" aria-label="믿음 2 막대 그래프"></canvas></div>
+  </article>
+  <article class="card">
+    <div class="card-top"><span class="kicker">믿음 3</span><span class="badge half">반만</span></div>
+    <h3>돈가스 데이가 최고 인기예요.</h3>
+    <p class="quote">돈가스 나오는 날은 무조건 넉넉히!</p>
+    <dl class="nums">
+      <div><dt>돈가스 <small>(19일)</small></dt><dd>72.1<span>명</span></dd></div>
+      <div><dt>카레(1등) <small>(21일)</small></dt><dd>72.3<span>명</span></dd></div>
+    </dl>
+    <p class="diff">차이 -0.2명 (출근 100명당)</p>
+    <p class="extra">돈가스는 10개 메뉴 중 2등</p>
+    <div class="chart" style="height:330px"><canvas id="belief-2" aria-label="믿음 3 막대 그래프"></canvas></div>
+  </article>
+  <article class="card">
+    <div class="card-top"><span class="kicker">믿음 4</span><span class="badge bad">틀림</span></div>
+    <h3>여름에 더우면 덜 와요.</h3>
+    <p class="quote">다들 시원한 냉면집으로 가는 것 같아요.</p>
+    <dl class="nums">
+      <div><dt>31도 이상 <small>(20일)</small></dt><dd>72.8<span>명</span></dd></div>
+      <div><dt>25도 이상 31도 미만 <small>(44일)</small></dt><dd>70.1<span>명</span></dd></div>
+    </dl>
+    <p class="diff">차이 +2.7명 (출근 100명당)</p>
+    <p class="extra">31도 이상인 날 20일</p>
+    <div class="chart" style="height:110px"><canvas id="belief-3" aria-label="믿음 4 막대 그래프"></canvas></div>
+  </article>
+  <article class="card">
+    <div class="card-top"><span class="kicker">믿음 5</span><span class="badge bad">틀림</span></div>
+    <h3>월요일엔 입맛이 없어서 적게 와요.</h3>
+    <p class="quote">주말 지나고 다들 기운이 없잖아요.</p>
+    <dl class="nums">
+      <div><dt>월요일 <small>(41일)</small></dt><dd>71.7<span>명</span></dd></div>
+      <div><dt>화–목 <small>(126일)</small></dt><dd>68.9<span>명</span></dd></div>
+    </dl>
+    <p class="diff">차이 +2.8명 (출근 100명당)</p>
+    
+    <div class="chart" style="height:110px"><canvas id="belief-4" aria-label="믿음 5 막대 그래프"></canvas></div>
+  </article>
+  <article class="card">
+    <div class="card-top"><span class="kicker">메모에 없던 규칙</span><span class="badge half">메모에 없음</span></div>
+    <h3>월급날엔 어떨까?</h3>
+    <p class="quote">메모에는 없지만 기록에 &#x27;월급날&#x27; 열이 있어 함께 견줬습니다.</p>
+    <dl class="nums">
+      <div><dt>월급날 <small>(12일)</small></dt><dd>56.4<span>명</span></dd></div>
+      <div><dt>보통 날 <small>(205일)</small></dt><dd>67.8<span>명</span></dd></div>
+    </dl>
+    <p class="diff">차이 -11.4명 (출근 100명당)</p>
+    <p class="extra">차이 있음 — 월급날이 더 적게 옴</p>
+    <div class="chart" style="height:110px"><canvas id="belief-5" aria-label="메모에 없던 규칙 막대 그래프"></canvas></div>
+  </article>
+  </div>
+</section>
+</main>
+<script type="application/json" id="page-data">{"beliefs": [{"id": "belief-0", "bars": [{"label": "비 오는 날", "value": 73.4, "hl": true}, {"label": "맑은 날", "value": 65.3, "hl": false}]}, {"id": "belief-1", "bars": [{"label": "금요일", "value": 60.0, "hl": true}, {"label": "월–목", "value": 69.6, "hl": false}]}, {"id": "belief-2", "bars": [{"label": "카레", "value": 72.3, "hl": false}, {"label": "돈가스", "value": 72.1, "hl": true}, {"label": "치킨마요", "value": 71.1, "hl": false}, {"label": "제육볶음", "value": 69.6, "hl": false}, {"label": "김치찌개", "value": 68.7, "hl": false}, {"label": "비빔밥", "value": 67.7, "hl": false}, {"label": "짜장", "value": 67.4, "hl": false}, {"label": "국수", "value": 66.1, "hl": false}, {"label": "생선구이", "value": 63.3, "hl": false}, {"label": "샐러드", "value": 55.0, "hl": false}]}, {"id": "belief-3", "bars": [{"label": "31도 이상", "value": 72.8, "hl": true}, {"label": "25도 이상 31도 미만", "value": 70.1, "hl": false}]}, {"id": "belief-4", "bars": [{"label": "월요일", "value": 71.7, "hl": true}, {"label": "화–목", "value": 68.9, "hl": false}]}, {"id": "belief-5", "bars": [{"label": "월급날", "value": 56.4, "hl": true}, {"label": "보통 날", "value": 67.8, "hl": false}]}]}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+const DATA = JSON.parse(document.getElementById('page-data').textContent);
+const css = getComputedStyle(document.documentElement);
+const ACCENT = css.getPropertyValue('--accent').trim(), BAR = css.getPropertyValue('--bar').trim();
+Chart.defaults.font.family = "'Noto Sans KR', sans-serif";
+Chart.defaults.font.size = 14;
+Chart.defaults.color = '#5b6370';
+for (const b of DATA.beliefs) {
+  new Chart(document.getElementById(b.id), {
+    type: 'bar',
+    data: {labels: b.bars.map(x => x.label),
+           datasets: [{data: b.bars.map(x => x.value), backgroundColor: b.bars.map(x => x.hl ? ACCENT : BAR),
+                       borderRadius: 4, borderSkipped: 'start', barPercentage: 0.8, categoryPercentage: 0.9}]},
+    options: {indexAxis: 'y', responsive: true, maintainAspectRatio: false, animation: false,
+      plugins: {legend: {display: false},
+                tooltip: {callbacks: {label: c => `출근 100명당 ${c.parsed.x.toFixed(1)}명`}}},
+      scales: {x: {beginAtZero: true, max: 100, grid: {color: '#eef0f3'}, border: {display: false}},
+               y: {grid: {display: false}, border: {display: false}}}}
+  });
+}
+</script>
+</body>
+</html>
